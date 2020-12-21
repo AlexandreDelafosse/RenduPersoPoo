@@ -1,0 +1,521 @@
+#discussion {
+	height: 35vh;
+	box-shadow: 0 0 5px grey;
+	overflow-y: scroll;
+}
+
+.saisie {
+	height: 20vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to top left, cyan, violet);
+	min-height: 100vh;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Header */
+
+header {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+}
+
+nav {
+	display: flex;
+	width: 100%;
+	height: 70px;
+	justify-content: end;
+}
+
+nav img {
+	width: 70px;
+	height: auto;
+}
+
+nav div {
+	display: flex;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navigation {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navigation h2 {
+	margin: 10px 10px;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	justify-content: end;
+
+}
+
+/* Accueil */
+
+h1,
+h3 {
+	text-align: center;
+}
+
+#pdg,
+#Twitch {
+	text-align: center;
+}
+
+#LogoTwitch {
+	width: 50%;
+}
+
+/* Questionnaire */
+
+#presquestionnaire {
+	width: 40%;
+}
+
+.Reponses {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.Reponses div {
+	width: 100%;
+	text-align: center;
+}
+
+.reponse {
+	font-size: 20px;
+	margin: 24px 175px;
+	background-color: white;
+	border-radius: 50px;
+}
+
+#imgpres {
+	text-align: center;
+}
+
+/* Propositions sondages */
+
+#Alde,
+#Gotaga,
+#squeezie,
+#corobizar {
+	width: 40%;
+}
+
+.orgsond {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.under {
+	font-size: 20px;
+	color: white;
+	padding: 10px;
+
+}
+
+.entete {
+	text-align: center;
+}
+
+/* Page classement */
+
+.tableau {
+	margin: auto;
+	text-align: center;
+}
+
+.teteclassement h2 {
+	margin: auto;
+	text-align: center;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+
+}
+
+thead th:nth-child(1) {
+	width: 30%;
+}
+
+thead th:nth-child(2) {
+	width: 20%;
+}
+
+thead th:nth-child(3) {
+	width: 28%;
+}
+
+thead th:nth-child(4) {
+	width: 35%;
+}
+
+th,
+td {
+	padding: 10px;
+}
+
+.navclass {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navclass h2 {
+	margin: 10px 10px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	justify-content: end;
+
+}
+
+
+.Details {
+	text-align: center;
+}
+
+/* -------------------------------------------------------------------------POPUP*/
+
+#navSondage {
+	visibility: hidden;
+}
+
+#backgroundPopUp {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	background: linear-gradient(to top left, cyan, violet);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.popUp {
+	background: white;
+	text-align: center;
+	width: 450px;
+	height: 200px;
+	border-radius: 20px;
+	padding: 40px;
+}
+
+.popUp label {
+	display: block;
+	font-size: 24px;
+}
+
+.popUp input {
+	width: 50%;
+	display: block;
+	padding: 16px;
+	margin: 20px auto 30px auto;
+	border-radius: 6px;
+}
+
+.popUp a {
+	color: white;
+	background-color: cornflowerblue;
+	text-decoration: none;
+	border-radius: 6px;
+	padding: 12px;
+	cursor: pointer;
+
+}
+
+#submit {
+	margin: auto;
+	margin-bottom: 75px;
+	font-size: xx-large;
+	background-color: cornflowerblue;
+	color: white;
+	border-radius: 6px;
+}
+
+/* */
+.victoire {
+	text-align: center;
+	display: none;
+	font-size: x-large;
+}
+
+
+/* ----------------------------------------------------------------------------------Footer */
+
+.basdepage {
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+.basdepage h2 {
+	margin: 10px 10px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	justify-content: end;
+
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	background-color: darkgray;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+}
+
+/* --------------------------------------------------------------------------------------Tablette */
+
+@media screen and (max-width:900px) {
+
+
+	/* -----------------------------------------------------------------------------------Header */
+
+	header {
+		background-color: black;
+		display: flex;
+		justify-content: center;
+	}
+
+	.navigation {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+	}
+
+	.navigation h2 {
+		margin: 10px 5px;
+		color: white;
+		font-family: 'Roboto', sans-serif;
+		justify-content: end;
+
+	}
+
+	/* ---------------------------------------------------------------------------------Footer */
+
+	.basdepage {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+	}
+
+	.basdepage h2 {
+		margin: 10px 5px;
+		color: white;
+		font-family: 'Roboto', sans-serif;
+		justify-content: end;
+
+	}
+
+	footer {
+		background-color: darkgray;
+		display: flex;
+		justify-content: center;
+	}
+
+	/* Propositions sondages */
+
+	#Alde,
+	#Gotaga,
+	#squeezie,
+	#corobizar {
+		width: 100%;
+	}
+
+	/* Accueil */
+
+	#LogoTwitch {
+		width: 100%;
+	}
+
+	.Reponses {
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+
+	.Reponses div {
+		width: 100%;
+		text-align: center;
+	}
+
+	/* Questionnaire */
+	#presquestionnaire {
+		width: 90%;
+	}
+
+	.reponse {
+		font-size: 20px;
+		margin: 24px 175px;
+		background-color: white;
+		border-radius: 50px;
+	}
+
+	/* Details sondages */
+
+
+}
+
+/* --------------------------------------------------------------------------------Téléphone */
+
+
+@media screen and (max-width:450px) {
+
+	/* -----------------------------------------------------------------------------Header */
+
+	header {
+		background-color: black;
+		display: flex;
+		justify-content: center;
+	}
+
+	.navigation {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+	}
+
+	.navigation h2 {
+		font-size: 7px;
+		color: white;
+		font-family: 'Roboto', sans-serif;
+		justify-content: end;
+
+	}
+
+
+	/* Propositions sondages */
+
+	#Alde,
+	#Gotaga,
+	#squeezie,
+	#corobizar {
+		width: 100%;
+	}
+
+	.orgsond {
+		text-align: center;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	.under {
+		padding: 10px;
+
+	}
+
+
+
+	.entete {
+		text-align: center;
+	}
+
+
+	/* Details sondages */
+
+
+	/* Classements */
+
+	/* Tableaux */
+	.tableau {
+		margin: auto;
+		text-align: center;
+	}
+
+	.teteclassement h2 {
+		margin: auto;
+		text-align: center;
+	}
+
+	table {
+		table-layout: fixed;
+		width: 100%;
+		border-collapse: collapse;
+
+	}
+
+	thead th:nth-child(1) {
+		width: 30%;
+	}
+
+	thead th:nth-child(2) {
+		width: 20%;
+	}
+
+	thead th:nth-child(3) {
+		width: 28%;
+	}
+
+	thead th:nth-child(4) {
+		width: 35%;
+	}
+
+	th,
+	td {
+		padding: 10px 7px;
+	}
+
+	#LogoTwitch {
+		width: 100%;
+	}
+
+	/* Questionnaire */
+	#presquestionnaire {
+		width: 90%;
+	}
+
+	.reponse {
+		font-size: 11px;
+		margin: 16px 80px;
+		background-color: white;
+		border-radius: 50px;
+	}
+
+	/* -------------------------------------------------------------------------------Footer */
+
+	.basdepage {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+	}
+
+	.basdepage h2 {
+		font-size: 7px;
+		color: white;
+		font-family: 'Roboto', sans-serif;
+		justify-content: end;
+
+	}
+
+	footer {
+		background-color: darkgray;
+		display: flex;
+		justify-content: center;
+	}
+}
