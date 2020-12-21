@@ -1,8 +1,11 @@
-<?php include('inc/header.php') ?>
+<?php include('inc/header.php');
+include('../public/inc/nav.php'); ?>
+<br>
+<br>
 
 Nom du sondage : <?= $select_sondage[1]['questions'] ?>
 
-<form method='post' action="vote.php?url_=<?= $_url ?>">
+<form method='post' action="index.php?page=vote&url_=<?= $_GET['url_'] ?>">
     <?php
     foreach ($select_sondage as $reponse) {
     ?>

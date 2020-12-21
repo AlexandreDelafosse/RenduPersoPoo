@@ -147,7 +147,6 @@ h2 {
 
 table {
 	table-layout: fixed;
-	width: 100%;
 	border-collapse: collapse;
 
 }
@@ -454,7 +453,6 @@ footer {
 
 	table {
 		table-layout: fixed;
-		width: 100%;
 		border-collapse: collapse;
 
 	}

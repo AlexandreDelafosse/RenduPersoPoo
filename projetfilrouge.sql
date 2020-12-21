@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : Dim 20 déc. 2020 à 19:45
+-- Généré le : lun. 21 déc. 2020 à 20:01
 -- Version du serveur :  5.7.24
 -- Version de PHP : 7.2.19
 
@@ -48,30 +48,11 @@ INSERT INTO `friends` (`id`, `iduser_1`, `iduser_2`) VALUES
 
 CREATE TABLE `messages` (
   `id` int(11) NOT NULL,
-  `message` text NOT NULL,
+  `message` text CHARACTER SET utf8 NOT NULL,
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `users_id` int(11) NOT NULL,
   `sondages_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Déchargement des données de la table `messages`
---
-
-INSERT INTO `messages` (`id`, `message`, `created_at`, `users_id`, `sondages_id`) VALUES
-(1, 'coucou', '2020-11-29 13:51:20', 1, 0),
-(2, 'coucou', '2020-11-29 14:27:45', 2, 0),
-(3, 'margaux la plus nulle', '2020-11-29 14:28:30', 2, 0),
-(4, 'wsh', '2020-11-29 16:19:08', 1, 0),
-(5, 'ezcsxw', '2020-11-29 17:00:23', 1, 0),
-(26, 'sacha', '2020-12-05 14:47:28', 1, NULL),
-(27, 'alex', '2020-12-05 14:47:29', 1, NULL),
-(28, '-yrte', '2020-12-05 14:49:42', 1, NULL),
-(29, 'j-thrgesd', '2020-12-05 14:53:29', 1, NULL),
-(30, 'trv', '2020-12-05 14:54:44', 1, NULL),
-(31, '&z', '2020-12-05 15:21:25', 1, NULL),
-(32, '-èj(-yhtrgezf', '2020-12-07 19:53:17', 1, NULL),
-(33, 'zesdx', '2020-12-07 23:52:12', 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -120,10 +101,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `email`, `password`, `pseudo`, `isconnected`) VALUES
 (1, 'alexe.delafe@outlook.fr', '$2y$10$z3oX5gzk8dZMiqQt7yf8mei7whanwBCUA7IUjAd.HEuTwiaVeV2nq', 'alexandre', 1),
-(2, 'alexandre.delafosse@edu.devinci.fr', '$2y$10$KF0Yi1mMYQe1DP0lAbzzBe0y9BRkGM1ZeU4Teem8uu4ZNfkcLZ4ba', 'alex', 0),
-(4, 'sabine.wong@groupe3F.fr', '$2y$10$SOjnyaMyYLX0OzWm2r4LwuYBLG4542wSAk.5K/t.p6JbiwHO.rpkO', 'test', 0),
-(5, 'allex.dellaf@outlook.fr', '$2y$10$wTMYlS0gttMYRsk9QWLsGeSId6vl6Nq4r3YMZ1D8lEPQsCFpSRMZa', 'skander', 0),
-(6, 'Xalex.delafx@outlook.fr', '$2y$10$hDc4QWNLgmqYTZ.qNL5sGeMoNoqSbM.4ELYz8Gmtl6SF9OiuAeDy2', 'coucou', 0);
+(2, 'alexandre.delafosse@edu.devinci.fr', '$2y$10$KF0Yi1mMYQe1DP0lAbzzBe0y9BRkGM1ZeU4Teem8uu4ZNfkcLZ4ba', 'alex', 0);
 
 --
 -- Index pour les tables déchargées
@@ -169,31 +147,31 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `friends`
 --
 ALTER TABLE `friends`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT pour la table `reponses_sondages`
 --
 ALTER TABLE `reponses_sondages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT pour la table `sondages`
 --
 ALTER TABLE `sondages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Contraintes pour les tables déchargées

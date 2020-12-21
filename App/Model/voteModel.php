@@ -9,8 +9,8 @@ class VoteModel extends Database
     public function vote()
     {
         if (isset($_SESSION['user']) && !empty($_SESSION['user'])) {
-            if (!empty($_POST['vote'])) {
-
+            
+            
                 $_url =  $_GET['url_'];
                 $vote =  $_POST['vote'];
                 echo $_url;
@@ -28,8 +28,8 @@ class VoteModel extends Database
                 $req->bindParam(':id', $select_sondage['id']);
                 $req->execute();
 
-                header('Location:compte.php');
-            }
+                header('Location:index.php?page=compte');
+            
         }
     }
 }

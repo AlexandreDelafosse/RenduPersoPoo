@@ -1,15 +1,15 @@
 <?php
-include('inc/nav.php');
+include_once('inc/header.php');
 ?>
 
 <h2>Voici le profil de <?= $_SESSION['user']['pseudo']; ?></h2>
     <ul>
         <li>Votre pseudo est : <?= $profil['pseudo'] ?></li>
-        <li>Votre mail est : <?= $profil['email'] ?></li>
+        <li>Votre adresse e-mail est : <?= $profil['email'] ?></li>
         </ul>
-<a href="index.php?page=modifier">modifier</a>
+<a href="index.php?page=modifier">Modifier mes informations</a>
 <hr>
-<h2>mes sondages : </h2>
+<h2>Mes sondages : </h2>
 <?php
 
 foreach ($sondages as $sondage) {

@@ -36,8 +36,8 @@ class InscriptionModel extends Database
                 // On exécute la requête
                 $query->execute();
 
-                // On redirige vers la page d'accueil
-                header('Location: sondages.php');
+                // On redirige vers la page du compte
+                header('Location: index.php?page=compte');
             } else {
                 echo 'Tous les champs sont obligatoires';
             }

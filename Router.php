@@ -56,6 +56,7 @@ if (array_key_exists("page", $_GET)) {
         case 'vote':
             $controller = new VoteController();
             $controller->vote();
+            break;
         case 'deconnexion':
             $controller = new DeconnexionController();
             $controller->deconnexion();

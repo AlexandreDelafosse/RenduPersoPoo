@@ -1,4 +1,6 @@
-<?php include_once('inc/nav.php'); ?>
+<?php include_once('inc/header.php');
+include_once('inc/nav.php');
+?>
 <div>Modifier votre profil : </div>
         <form method="post">
 
@@ -11,3 +13,4 @@
                                                                         ?>" required>
     <button type="submit" name="modification">Modifier</button>
 </form>
+<?php include('inc/footer.php') ?>

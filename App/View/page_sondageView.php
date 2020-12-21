@@ -1,4 +1,6 @@
-<?php include_once('../public/inc/nav.php') ?>
+<?php
+include_once('inc/header.php');
+include_once('../public/inc/nav.php'); ?>
 
 <?php foreach ($listesondages as $result) {
 ?>
@@ -6,3 +8,4 @@
 <?php
     echo $result['_url'];
 }
+include('inc/footer.php') ?>

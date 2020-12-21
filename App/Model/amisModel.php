@@ -35,8 +35,8 @@ class AmisModel extends Database
                 $delete_friend->bindParam(':iduser_1', $_SESSION['user']['pseudo'], \PDO::PARAM_STR);
                 $delete_friend->bindParam(':iduser_2', $_POST['deletefriend'], \PDO::PARAM_STR);
                 $delete_friend->execute();
+                header('Location: index.php?page=amis');
                 return $delete_friend;
-                // header('Location: index.php?page=amis');
             }
         }
     }
@@ -57,8 +57,8 @@ class AmisModel extends Database
                 $add_friend->bindValue(':iduser_1', $_SESSION['user']['pseudo']);
                 $add_friend->bindValue(':iduser_2', $_POST['addfriend']);
                 $add_friend->execute();
+                header('Location: index.php?page=amis');
                 return $add_friend;
-                // header('Location: index.php?page=amis');
             }
         }
     }

@@ -28,6 +28,11 @@ include('inc/nav.php');
     <input type="text" name="search">
     <button type="submit">Rechercher</button>
 </form>
+<?php  if (!empty($_POST)) { if($search_friend == null) {
+                    echo ('Erreur : aucun résultat !');
+                } else {
+                
+?>
 <table>
     <tr>
         <th>Pseudo</th>
@@ -46,7 +51,8 @@ include('inc/nav.php');
     <?php
 
     }
-
+                }
+            }
     ?>
 </table>
 
